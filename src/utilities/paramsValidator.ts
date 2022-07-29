@@ -11,10 +11,16 @@ const paramsValidator = (
 
   if (!fileName || !width || !height) {
     res.status(400).send('please enter valid params');
-  } else if (isNaN(width)) {
-    res.status(400).send('please enter valid params, width must be a Number');
-  } else if (isNaN(height)) {
-    res.status(400).send('please enter valid params, height must be a Number');
+  } else if (isNaN(width) || width <= 0) {
+    res
+      .status(400)
+      .send('please enter valid width, width must be a Number greater than 0');
+  } else if (isNaN(height) || height <= 0) {
+    res
+      .status(400)
+      .send(
+        'please enter valid height, height must be a Number greater than 0'
+      );
   } else {
     next();
   }
