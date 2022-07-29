@@ -3,7 +3,7 @@ import { resizeImage } from '../utilities/ImageProcessing';
 
 // const metadata = await sharp(`./images/full/${fileName}.jpg`).metadata();
 
-describe('Testing Image Processing', () => {
+describe('Testing Image Processing', (): void => {
   const fileName = 'fjord';
   const width = 400;
   const height = 400;

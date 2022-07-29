@@ -4,7 +4,7 @@ import { paramsValidator } from '../../utilities/paramsValidator';
 
 const images = express.Router();
 
-images.get('/', (req, res) => {
+images.get('/', (req: express.Request, res: express.Response): void => {
   res.send('Welcome to Image Processing API');
 });
 

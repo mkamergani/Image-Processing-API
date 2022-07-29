@@ -7,7 +7,7 @@ const port = 5000;
 app.use('/api', routes);
 
 // Start The Express Server
-app.listen(port, () => {
+app.listen(port, (): void => {
   console.log(`Server started on https://localhost:${port}`);
 });
 
