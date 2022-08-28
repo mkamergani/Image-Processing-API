@@ -88,7 +88,7 @@ To run tests, run the following command
 
 ## Building, Formatting, Linting 
 
-To run tests, run the following command
+run the following command
 
 ```bash
   npm run build
